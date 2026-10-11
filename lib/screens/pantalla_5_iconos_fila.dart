@@ -9,7 +9,7 @@ class Pantalla5IconosFila extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          '5 Iconos Columna',
+          '5 Iconos Fila',
           style: GoogleFonts.abel(color: Colors.white),
         ),
         backgroundColor: Color.fromARGB(255, 102, 80, 164),
