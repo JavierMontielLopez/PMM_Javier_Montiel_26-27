@@ -153,7 +153,7 @@ class MenuLateral extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const pantalla_disenio_responsive(),
+                  builder: (context) => const PantallaDisenioResponsive(),
                 ),
               );
             },
