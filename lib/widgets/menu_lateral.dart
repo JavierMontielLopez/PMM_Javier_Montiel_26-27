@@ -1,4 +1,5 @@
 // Importamos todas las pantallas necesarias para poder hacer el menú lateral
+import 'package:aplicacion_prueba/screens/pantalla_clic.dart';
 import 'package:aplicacion_prueba/screens/pantalla_disenio_responsive.dart';
 import 'package:aplicacion_prueba/screens/pantalla_nombre_github.dart';
 import 'package:aplicacion_prueba/screens/pantalla_foto_nombre.dart';
@@ -9,6 +10,7 @@ import 'package:aplicacion_prueba/screens/pantalla_3textos_desborde_paquete.dart
 import 'package:aplicacion_prueba/screens/pantalla_5_iconos_fila.dart';
 import 'package:aplicacion_prueba/screens/pantalla_5_imagenes_columa.dart';
 import 'package:aplicacion_prueba/screens/pantalla_reto_cabecera.dart';
+import 'package:aplicacion_prueba/screens/pantalla_perfil_instagram.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -131,10 +133,7 @@ class MenuLateral extends StatelessWidget {
               'https://fastly.picsum.photos/id/29/4000/2670.jpg?hmac=rCbRAl24FzrSzwlR5tL-Aqzyu5tX_PA95VJtnUXegGU',
               width: 40,
             ),
-            title: Text(
-              '3 Textos desborde con paquete de texto',
-              style: GoogleFonts.abel(),
-            ),
+            title: Text('3 Fotos Columna', style: GoogleFonts.abel()),
             onTap: () {
               Navigator.pop(context);
               Navigator.push(
@@ -167,6 +166,32 @@ class MenuLateral extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => const PantallaRetoCabecera(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.ads_click_outlined),
+            title: Text('Contador Clic', style: GoogleFonts.abel()),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const PantallaContador(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.person_outline),
+            title: Text('Perfil Instagram', style: GoogleFonts.abel()),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const PantallaPerfilInstagram(),
                 ),
               );
             },
